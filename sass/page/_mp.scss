@@ -1238,7 +1238,7 @@ section {
             overflow: hidden;
         }
         li{
-            padding:.6em 1em;
+            padding:.6em .5em .6em 25px;
             line-height: 1.6;
             position: relative;
             span{
@@ -1267,6 +1267,71 @@ section {
                 width: 30px;
                 height: 30px;
                 vertical-align: middle;
+            }
+        }
+        .info_address{
+            position: relative;
+            &:before{
+                content: '';
+                width: 16px;
+                height: 16px;
+                background: url(../images/icon-address.png) no-repeat center center;
+                background-size: 16px auto;
+                position: absolute;
+                left: 0;
+                top: .85em;
+            }
+        }
+        .info_phone{
+            position: relative;
+            &:before{
+                content: '';
+                width: 16px;
+                height: 16px;
+                background: url(../images/icon-phone.png) no-repeat center center;
+                background-size: 16px auto;
+                position: absolute;
+                left: 0;
+                top: .85em;
+            }
+        }
+        .info_opening{
+            position: relative;
+            &:before{
+                content: '';
+                width: 16px;
+                height: 16px;
+                background: url(../images/icon-opening.png) no-repeat center center;
+                background-size: 16px auto;
+                position: absolute;
+                left: 0;
+                top: .85em;
+            }
+        }
+        .info_closed{
+            position: relative;
+            &:before{
+                content: '';
+                width: 16px;
+                height: 16px;
+                background: url(../images/icon-closed.png) no-repeat center center;
+                background-size: 16px auto;
+                position: absolute;
+                left: 0;
+                top: .85em;
+            }
+        }
+        .info_stat{
+            position: relative;
+            &:before{
+                content: '';
+                width: 16px;
+                height: 16px;
+                background: url(../images/icon-stat.png) no-repeat center center;
+                background-size: 16px auto;
+                position: absolute;
+                left: 0;
+                top: .85em;
             }
         }
     }
