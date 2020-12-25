@@ -29,8 +29,8 @@ body {
 }
 
 .mpbg{
- position:relative;
- background: #f9f6f1;
+   position:relative;
+   background: #f9f6f1;
  // z-index: 0;
  &:before{
     content:'';
@@ -92,8 +92,8 @@ body {
         @include gutter;
     }
     .news, .recent_activities{
-       padding-left: 3.5em;
-       overflow: hidden;
+     padding-left: 3.5em;
+     overflow: hidden;
        //background-color: #fff;
        @include screen('mobile') {
         padding-left:15px;
@@ -196,16 +196,61 @@ body {
             }
             ul{
                 li{
-                    &:before{
-                        content: "";
-                        position:absolute;
-                        width:12px;
-                        height:1px;
-                        background-color: $secondaryColor;
-                        left:0;
-                        top:1.25em;
-                    }
+                    // &:before{
+                    //     content: "";
+                    //     position:absolute;
+                    //     width:16px;
+                    //     height:16px;
+                    //     background-color: $primaryColor;
+                    //     left:0;
+                    //     top:.85em;
+                    //     border-radius: 3px;
+                    //     background-size: 14px auto;
+                    // }
                 }
+            }
+        }
+
+        .info_address{
+            position: relative;
+            &:before{
+                background: url(../images/icon-address2.png) no-repeat center center!important;
+                background-size: 16px auto!important;
+            }
+        }
+        .info_phone{
+            position: relative;
+            &:before{
+                background: url(../images/icon-phone2.png) no-repeat center center!important;
+                background-size: 16px auto!important;
+            }
+        }
+        .info_opening{
+            position: relative;
+            &:before{
+                background: url(../images/icon-opening2.png) no-repeat center center!important;
+                background-size: 16px auto!important;
+            }
+        }
+        .info_closed{
+            position: relative;
+            &:before{
+                background: url(../images/icon-closed2.png) no-repeat center center!important;
+                background-size: 16px auto!important;
+            }
+        }
+        .info_stat{
+            position: relative;
+            &:before{
+                background: url(../images/icon-stat2.png) no-repeat center center!important;
+                background-size: 16px auto!important;
+            }
+        }
+        .info_collection{
+            position: relative;
+            &:before{
+                background: url(../images/icon-stat2.png) no-repeat center center!important;
+                background-size: 16px auto!important;
             }
         }
     }

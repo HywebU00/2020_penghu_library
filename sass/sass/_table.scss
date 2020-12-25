@@ -7,33 +7,38 @@ table {
     }
     th,
     td {
-        padding: .5em;
+        padding: .5em 1em;
         text-align: left;
-    }
-    td {
-        border: #ddd 1px solid;
+        @include screen('mobile') {
+          padding: .5em;  
+      }
+  }
+  td {
+    border: #ddd 1px solid;
+    word-break: break-all;
+    background: #fff;
+
+    a {
         word-break: break-all;
-        a {
-            word-break: break-all;
-        }
     }
-    th {
-        background-color: #F3F3F3;
-        color: #333;
-        border: #DDD 1px solid;
-        text-align: center;
-        white-space: nowrap;
+}
+th {
+    background-color: #F3F3F3;
+    color: #333;
+    border: #DDD 1px solid;
+    text-align: center;
+    white-space: nowrap;
+}
+&.table_hover {
+    tr:hover {
+        background: #F3F3F3;
     }
-    &.table_hover {
-        tr:hover {
-            background: #F3F3F3;
-        }
+}
+&.table_sprite {
+    tr:nth-child(even) {
+        background: #F5F5F5;
     }
-    &.table_sprite {
-        tr:nth-child(even) {
-            background: #F5F5F5;
-        }
-    }
+}
 }
 .table_list {
     @include screen('xs_mobile') {
@@ -67,7 +72,7 @@ table {
                 position: absolute;
                 top: .5em;
                 left: .5em;
-                width: 30%;
+                width: 25%;
                 padding-right: 10px;
                 white-space: nowrap;
                 text-align: left;

@@ -184,6 +184,7 @@
             list-style: none;
             padding:0 0 10px 0;
             width: 100%;
+            margin: 0;
 
             @include screen("mobile") {
                 display: block;
@@ -193,18 +194,23 @@
 
         li {
             display: inline-block;
-            margin: 0;
+            margin: 0 0 .5em 0;
             box-sizing: border-box;
             color: $color-word;
             text-align: center;
             font-weight: bold;
+
             @include screen("mobile") {
                 display: block;
                 float: left;
-                width: auto;
+                width: 50%;
                 white-space: nowrap;
                 margin: .25em 0;
             }
+            // @include screen('xs_mobile') {
+            //     width: 100%;
+            // }
+
             a{
                 color: #333;
                 display: inline-block;
@@ -212,8 +218,12 @@
                 transition: all .3s;
                 margin: 0 .2em;
                 min-width:5.5em;
+                background: #fff;
+                border-radius: 3px;
                 @include screen("mobile"){
                     margin:0 .25em;
+                    display: block;
+                    padding: .85em 0;
                 }
                 &:hover,
                 &:focus {
@@ -224,6 +234,7 @@
                     position: relative;
                     background: $secondaryColor;
                     color: #fff;
+                    border-top-right-radius: 12px;
                     &:before{
                         content: "";
                         position: absolute;
@@ -378,9 +389,9 @@
             overflow: hidden;
             padding:.5em 120px 1em 1em;
             @include screen("mobile") {
-               padding:.5em 1em 1em;
-           }
-           h2, h3, h4{
+             padding:.5em 1em 1em;
+         }
+         h2, h3, h4{
             margin-bottom: .5em;
             overflow: hidden;
             white-space: nowrap;
@@ -422,9 +433,9 @@
             color: $color-word;
             text-align: center;
             &.register{
-             color: $primaryColor;
-         }
-         &.full{
+               color: $primaryColor;
+           }
+           &.full{
             color: lighten($color-word, 10);
         }
         span{
