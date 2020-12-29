@@ -108,15 +108,18 @@
     background: #555;
     color:#fff;
     border-radius: 3px;
+    @include screen("mobile") {
+      margin-top: -1em;  
+  }
 
-    &:before{
-        content:"";
-        width: 20px;
-        height: 20px;
-        position: absolute;
-        left:10px;
-        top:.6em;
-        background: url('../images/icon_search.png')no-repeat center center;
-        background-size: 20px auto;
-    }
+  &:before{
+    content:"";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left:10px;
+    top:.6em;
+    background: url('../images/icon_search.png')no-repeat center center;
+    background-size: 20px auto;
+}
 }
