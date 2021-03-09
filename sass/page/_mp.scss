@@ -31,7 +31,7 @@ section {
         margin-top: 2em;
         // position: relative;
         padding-top: 1em;
-        background: no-repeat left -30px bottom -20px url(../images/bg_f02.png),no-repeat left 250px bottom -10px/150px url(../images/bg_f02.png) #23a1b1;
+        background: no-repeat left -30px bottom -20px url(../images/bg_f02.png),no-repeat left 250px bottom -10px/150px url(../images/bg_f02.png) $primaryColor;
         h2{
             color:#fff;
         }
@@ -390,9 +390,9 @@ section {
             padding:0;
             margin: 0;
             @media screen and (max-width: 826px) {
-             margin: -6em 0 0 0; 
-         }
-         @include screen('mobile') {
+               margin: -6em 0 0 0; 
+           }
+           @include screen('mobile') {
             float: none;
             display: block;
         }
