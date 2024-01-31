@@ -212,7 +212,7 @@
         // right: 100%;
         // top:0;
         float: left;
-        height: 40px;
+        height: 2.5rem;
         border: 0;
         border: 1px solid $primaryColor;
         border-right: 0;
@@ -235,7 +235,8 @@
                 left: 0;
                 top:0;
                 margin-top: 0;
-                height: 40px;
+                // height: 40px;
+                height: 2.5rem;
                 width: calc(100% - 85px);
                 padding: .2em .5em;
                 border-radius: 0 3px 3px 0;
@@ -248,7 +249,8 @@
             &[type="submit"] {
                 //font-size: 0em;
                 width: 80px !important;
-                height: 40px;
+                height: 2.5rem;
+                // height: 40px;
                 //background: url(../images/basic/icon_search.png) no-repeat center center;
                 background-size: 20px;
                 background: $primaryColor;
